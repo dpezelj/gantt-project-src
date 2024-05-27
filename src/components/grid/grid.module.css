@@ -1,0 +1,15 @@
+.gridRow {
+  fill: #fff;
+}
+
+.gridRow:nth-child(even) {
+  fill: #fff;
+}
+
+.gridRowLine {
+  stroke: #fafafa;
+}
+
+.gridTick {
+  stroke: #fafafa;
+}
