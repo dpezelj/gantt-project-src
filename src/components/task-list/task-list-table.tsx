@@ -120,7 +120,18 @@ export const TaskListTableDefault: React.FC<{
                     >
                       {t.name}
                     </div>
-                    {t.projectManager && (
+                    {t.projectManager === "Undefined" ? (
+                      <a
+                        href="/#"
+                        style={{
+                          fontSize: "12px",
+                          color: "rgb(2, 45, 95)",
+                          cursor: "pointer",
+                        }}
+                      >
+                        Assign project manager
+                      </a>
+                    ) : (
                       <div
                         style={{ fontSize: "12px", color: "rgb(2, 45, 95)" }}
                       >
